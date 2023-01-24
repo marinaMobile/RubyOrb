@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/mainFirst">
+
+    <fragment
+        android:id="@+id/mainFirst"
+        android:name="com.ferrero.a.FirstFragment"
+        android:label="fragment_main_first"
+        tools:layout="@layout/fragment_first" >
+        <action
+            android:id="@+id/action_mainFirst_to_countryFragm"
+            app:destination="@id/countryFragm" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondMainFragment"
+        android:name="com.ferrero.a.SecondMain"
+        android:label="fragment_second_main"
+        tools:layout="@layout/fragment_second_main" >
+        <action
+            android:id="@+id/action_secondMainFragment_to_beforeFilter"
+            app:destination="@id/beforeFilter" />
+    </fragment>
+    <fragment
+        android:id="@+id/filterFragment"
+        android:name="com.ferrero.a.FilterFragment"
+        android:label="fragment_filter"
+        tools:layout="@layout/fragment_filter" />
+    <fragment
+        android:id="@+id/beforeFilter"
+        android:name="com.ferrero.a.BeforeFilter"
+        android:label="fragment_before_filter"
+        tools:layout="@layout/fragment_before_filter" >
+        <action
+            android:id="@+id/action_beforeFilter_to_filterFragment"
+            app:destination="@id/filterFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/countryFragm"
+        android:name="com.ferrero.a.CountryFragment"
+        android:label="CountryFragm" >
+        <action
+            android:id="@+id/action_countryFragm_to_secondMainFragment"
+            app:destination="@id/secondMainFragment" />
+    </fragment>
+</navigation>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Sky Lord</string>
+
+    <string name="facebook_app_id">457698169758126</string>
+    <string name="fb_login_protocol_scheme">fb457698169758126</string>
+    <string name="facebook_client_token">113e3eca93029d8080a34d1ab9e998bb</string>
+    <string name="file_chooser_title">Choose image</string>
+    <string name="cannot_open_file_chooser_txt">Can not open file chooser</string>
+    <string name="camera_permission_granted_txt">Permission granted</string>
+    <string name="camera_permission_denied_txt">Permission denied</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
